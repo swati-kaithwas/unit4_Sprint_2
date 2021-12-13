@@ -3,7 +3,7 @@ const passport = require("passport");
 const GoogleStrategy = require("passport-google-oauth2").Strategy;
 const { uuid } = require("uuidv4");
 
-// const User = require("../models/user.model");
+const User = require("../models/user.model");
 const { newToken } = require("../controllers/auth.controller");
 
 passport.use(
