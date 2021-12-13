@@ -1,5 +1,5 @@
 
-const app =require("./index");
+const app = require("./index");
 const connect = require("./configs/db");
 
 app.listen(2345, async function () {
