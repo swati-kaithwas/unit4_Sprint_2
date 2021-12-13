@@ -11,7 +11,7 @@
 const bcrypt = require("bcryptjs");
 const { Schema, model } = require("mongoose");
 
-const screenSchema = new Schema(
+const showSchema = new Schema(
   {
       timing:{type: String,required: true},
     movie: [{ type: String, required: true }],
@@ -23,4 +23,4 @@ const screenSchema = new Schema(
     timestamps: true,
   }
 );
-module.exports = model("screen", screenSchema); 
+module.exports = model("show", showSchema); 

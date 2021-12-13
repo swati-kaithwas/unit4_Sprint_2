@@ -3,7 +3,7 @@
 const bcrypt = require("bcryptjs");
 const { Schema, model } = require("mongoose");
 
-const theratresSchema = new Schema(
+const theratreSchema = new Schema(
   {
       name:{type: String,required: true},
     location: { type: String, required: true }
@@ -18,4 +18,4 @@ const theratresSchema = new Schema(
 
 
 
-module.exports = model("theatres", theatresSchema); 
+module.exports = model("theatre", theatreSchema); 

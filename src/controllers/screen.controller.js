@@ -2,8 +2,8 @@ const express = require("express");
 
 const Product = require("../models/screens.model");
 
-const authenticate = require("../middlewares/authenticate");
-const authorise = require("../middlewares/authorise");
+const authenticate = require("../middleware/authenticate");
+const authorise = require("../middleware/authorise");
 
 const router = express.Router();
 
