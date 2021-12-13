@@ -4,7 +4,7 @@ const Product = require("../models/shows.model");
 
 const authenticate = require("../middleware/authenticate");
 const authorise = require("../middleware/authorise");
-
+const router = express.Router();
 
 router.post(
   "/",

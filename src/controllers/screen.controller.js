@@ -1,6 +1,6 @@
 const express = require("express");
 
-const Product = require("../models/screens.model");
+const Screen = require("../models/screens.model");
 
 const authenticate = require("../middleware/authenticate");
 const authorise = require("../middleware/authorise");

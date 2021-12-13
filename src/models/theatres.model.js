@@ -18,4 +18,4 @@ const theratreSchema = new Schema(
 
 
 
-module.exports = model("theatre", theatreSchema); 
+module.exports = model("theatre", theratreSchema); 

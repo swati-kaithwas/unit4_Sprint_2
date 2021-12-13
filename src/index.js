@@ -1,11 +1,11 @@
 const express = require("express");
 
-const { register, login } = require("./controllers/auth.controller");
+ const { register, login } = require("./controllers/auth.controller");
 const movieController = require("./controllers/movie.controller");
 const screenController = require("./controllers/screen.controller");
 const seatController = require("./controllers/seat.controller");
 const showController = require("./controllers/show.controller");
-const theatreController = require("./controllers/threatres.controller");
+const theatreController = require("./controllers/theatres.controller");
 
 const passport = require("./configs/passport");
 
@@ -29,7 +29,7 @@ app.post("/login", login);
 app.use("/movies", movieController);
 app.use("/seats", seatController);
 app.use("/shows", showController);
-app.use("/theatres", threatreController);
+app.use("/theatres", theatreController);
 app.use("/screens", screenController);
 
 app.get(
